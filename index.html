@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ok</title>
+</head>
+<body>
+    <section id="section_one" class="background--image">
+        <nav class="navbar--base">
+            <img src="./icon.png" alt="icon">
+            <div>
+                <ul>
+                    <li><a href="#section_two">01.History</a></li>
+                    <li><a href="#section_three">02.Team</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="title_container">
+            <h1 class="title--h1 font--size--big" id="section_one_title">LOS ANGELES</h1>
+            <h1 class="title--h1 font--size--big" id="section_two_title">MOUNTAINS</h1>
+        </div>
+    </section>
+    
+    <section id="section_two" class="background--image">
+        <div class="nav--container">
+            <nav class="navbar--base">
+                <div class="icon--title">
+                    <img class="icon--style" src="./icon.png" alt="icon">
+                    <div class="title--h1-icon">
+                        <h1 class="title--h1">LOS ANGELES</h1>
+                        <h1 class="title--h1">MOUNTAINS</h1>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#section_two">01.History</a></li>
+                        <li><a href="#section_three">02.Team</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="history--container">
+            <h1>01</h1>
+            <h1>HISTORY</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultricies felis in ullamcorper. Morbi auctor nulla nec orci fermentum lacinia. In ultrices odio vel fringilla fermentum. Phasellus molestie congue ex eget tincidunt. In molestie arcu et nisl tristique, in commodo lacus laoreet.</p>
+        </div>
+        
+        <div class="carousel--container">
+            <div class="sub--container">
+                <img id="image1" src="./carousel2.jpg" alt="">
+                <img id="image2" src="./carousel1.jpg" alt="">
+                <img id="image3" src="./carousel2.jpg" alt="">
+                <img id="image4" src="./carousel1.jpg" alt="">
+            </div> 
+        </div>
+    </section>
+
+    <section id="section_three" class="background--image1">
+        <div style="background-color: #687c9f;">
+            <div class="climb--main">
+                <div class="climb--container">
+                    <h1>02</h1>
+                    <h1>CLIMB</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultricies felis in ullamcorper. Morbi auctor nulla nec orci fermentum lacinia.</p>
+            </div>
+        </div>
+       
+
+        <div class="navbar--climb ">
+            <div class="navbar--climb--container">
+                <ul>
+                    <li id="toggle1" class="" onclick="btnStyling1()">MOUNTAIN 1</li>
+                    <li id="toggle2" class="selected" onclick="btnStyling2()">MOUNTAIN 2</li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div id="table1" class="table table1" hidden>
+            <h1>SCHEDULE</h1>
+            <div>
+                <p>25 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>28 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>25 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>25 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+        </div>
+
+        <div id="table2" class="table table2">
+            <h1>SCHEDULE</h1>
+            <div>
+                <p>17 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>13 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>28 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+            <div>
+                <p>9 Nov 2016 </p>
+                <p>VestibulumVIViera</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer--container">
+        <div class="footer--subcontainer">
+
+            <div class="footer--icon">
+                <img src="./icon.png" alt="">
+                <div>
+                    <p>LOS ANGELES</p>
+                    <p class="adjust-mountain">MOUNTAINS</p>
+                </div>
+            </div>
+
+            <div class="footer--copyright">
+                <p>Copyright 2016. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
