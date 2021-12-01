@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>ok</title>
+    <title>Mountains</title>
 </head>
 <body>
     <section id="section_one" class="background--image">
@@ -49,14 +49,23 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer faucibus ultricies felis in ullamcorper. Morbi auctor nulla nec orci fermentum lacinia. In ultrices odio vel fringilla fermentum. Phasellus molestie congue ex eget tincidunt. In molestie arcu et nisl tristique, in commodo lacus laoreet.</p>
         </div>
         
+        <!-- --------------------------------------- -->
         <div class="carousel--container">
             <div class="sub--container">
-                <img id="image1" src="./carousel2.jpg" alt="">
-                <img id="image2" src="./carousel1.jpg" alt="">
-                <img id="image3" src="./carousel2.jpg" alt="">
-                <img id="image4" src="./carousel1.jpg" alt="">
+                <!-- 
+                    flex
+                    justify content center
+                    align items center
+                 -->
+                <img id="image1" src="./carousel1.jpg" alt="">
+                <div>
+                    <button id="btnNext"  onclick="nextImg()" ></button>
+                    <button id="btnBack" onclick="goBackImg()" class="selected--btn" ></button>
+                </div>
             </div> 
         </div>
+        <!-- --------------------------------------- -->
+
     </section>
 
     <section id="section_three" class="background--image1">

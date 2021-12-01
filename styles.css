@@ -148,28 +148,44 @@ body{
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height: 16%;
-
 }
 
 .sub--container{
     width: 35%;
     margin: auto;
     min-width: 260px;
-
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
 .sub--container > img{
-    width: 30%;
+    width: 15vw;
+    min-width: 165px;
 }
 
-#image1{
-    right: 0px;
-    bottom: 0px;
+.sub--container > div{
     position: absolute;
+    bottom: 0px;
 }
+
+.sub--container > div > button{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+.selected--btn{
+    background-color: darkgrey !important;
+}
+
+
 
 #image2{
     right: 17%;

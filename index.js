@@ -40,3 +40,56 @@ function btnStyling2(){
         table2.hidden = false
     }
 }
+
+const IMAGES = [
+    {
+        file: "carousel1.jpg",
+        path: "./carousel1.jpg",
+    },
+    {
+        file: "carousel2.jpg",
+        path: "./carousel2.jpg",
+    },
+]
+
+const URL = "http://localhost:5500"
+
+
+function nextImg(){
+    const imageCarousel = document.getElementById('image1')
+    const btnGoBackImg = document.getElementById('btnBack')
+    const btnNextImg = document.getElementById('btnNext')
+
+    if (imageCarousel.src === `${URL}/${IMAGES[0].file}`) {
+        imageCarousel.src = IMAGES[1].path
+        btnGoBackImg.className = ""
+        btnNextImg.className = "selected--btn"
+    }
+}
+
+function goBackImg(){
+    const imageCarousel = document.getElementById('image1')
+    const btnGoBackImg = document.getElementById('btnBack')
+    const btnNextImg = document.getElementById('btnNext')
+
+    if (imageCarousel.src === `${URL}/${IMAGES[1].file}`) {
+        imageCarousel.src = IMAGES[0].path
+        btnGoBackImg.className = "selected--btn"
+        btnNextImg.className = ""
+    }
+}
+
+
+// button function
+function carouselBtn() {
+    // // click 
+    // const imageCarousel = document.getElementById('image1')
+    // if(imageCarousel.src === )
+    // // atras
+    // IMAGES[n - 1]
+    // // siguiente
+    // IMAGES[n + 1]
+    // IMAGES[1]
+    // div id="tal" img src={}
+}
+
