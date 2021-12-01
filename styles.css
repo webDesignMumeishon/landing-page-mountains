@@ -211,10 +211,6 @@ body{
     --------------------------------------
 */
 
-/* #section_three{
-    background-image: url('./toggle1.jpg');
-} */
-
 .background--image1{
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -229,7 +225,6 @@ body{
     height: 100vh;
     position: relative;
     background-image: url('./toggle2.jpg');
-
 }
 
 .climb--container{
@@ -311,7 +306,7 @@ body{
     left: 20%;
     padding: 1.5rem;
     width: 20%;
-    min-width: 100px;
+    min-width: 300px;
     font-family: sans-serif;
     font-size: .8rem;
 }
@@ -377,6 +372,99 @@ body{
     margin: auto;
 }
 
+/*
+    --------------------------------------
+                Helpers
+    --------------------------------------
+*/
 
+.show--accordion--function1{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    background-image: url('./toggle1.jpg');
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.show--accordion--function2{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    background-image: url('./toggle2.jpg');
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hide--accordion{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .table {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .navbar--climb{
+      background-color: transparent;
+    }
+
+    .navbar--climb--container > ul {
+        flex-direction: column;
+        background-color: #202a44c2;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar--climb--container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .selected {
+        transform:none;
+        padding: 0.2rem;
+        background: gray;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .table {
+        background-color: #ffffffba;
+        top: 40%;
+        position: static;
+        left: 20%;
+        padding: 1.5rem;
+        width: 90%;
+        min-width: 100px;
+        font-family: sans-serif;
+        font-size: .8rem;
+        color: black;
+    }
+
+    .history--container {
+        width: 70%;
+    }
+
+    .history--container > p {
+        width: 100%;
+    }
+
+
+
+}
 
 
