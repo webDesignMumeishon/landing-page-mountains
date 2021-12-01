@@ -1,4 +1,3 @@
-console.log("working");
 
 function btnStyling1(){
 
@@ -81,15 +80,14 @@ function goBackImg(){
 
 
 // button function
-function carouselBtn() {
-    // // click 
-    // const imageCarousel = document.getElementById('image1')
-    // if(imageCarousel.src === )
-    // // atras
-    // IMAGES[n - 1]
-    // // siguiente
-    // IMAGES[n + 1]
-    // IMAGES[1]
-    // div id="tal" img src={}
-}
+window.onload = function(){
+	console.log("window.onload");
+	window.addEventListener('resize', resize)
 
+};
+
+function resize(e){
+    let heigth = window.innerHeight;
+    let width = window.innerWidth;
+    console.log(heigth, width);
+}
