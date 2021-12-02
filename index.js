@@ -13,9 +13,6 @@ function btnStyling1(){
     const tableContainer1 = document.getElementById("table_container1")
     const tableContainer2 = document.getElementById("table_container2")
 
-    // console.log(tableContainer1.className,btn1.className);
-
-
     if(btn1.className != "selected" && width > 451){
         btn1.className = "selected"
         btn2.className = ""
@@ -28,11 +25,12 @@ function btnStyling1(){
         btn2.className = ""
         tableContainer1.className = "show--accordion--function1"
         tableContainer2.className = "hide--accordion"
-        // table1.hidden = false
-        // table2.hidden = true
     }
     else if(tableContainer1.className == "show--accordion--function1" && btn1.className == "selected"){
         tableContainer1.className = "hide--accordion"
+    }
+    else if(tableContainer1.className == "hide--accordion" && btn1.className == "selected"){
+        tableContainer1.className = "show--accordion--function1"
     }
     else{
         return null
@@ -65,15 +63,14 @@ function btnStyling2(){
     else if(btn2.className != "selected"){
         btn2.className = "selected"
         btn1.className = ""
-
         tableContainer2.className = "show--accordion--function2"
         tableContainer1.className = "hide--accordion"
-
-        // table1.hidden = true
-        // table2.hidden = false
     }
     else if(tableContainer2.className == "show--accordion--function2" && btn2.className == "selected"){
         tableContainer2.className = "hide--accordion"
+    }
+    else if(tableContainer2.className == "hide--accordion" && btn2.className == "selected"){
+        tableContainer2.className = "show--accordion--function2"
     }
     else{
         return null
