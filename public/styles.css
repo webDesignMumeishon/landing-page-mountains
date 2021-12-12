@@ -47,7 +47,7 @@ body{
 }
 
 #section_one{
-    background-image: url('./background.jpg');
+    background-image: url('./img/background.jpg');
 }
 
 #title_container{
@@ -80,7 +80,7 @@ body{
 */
 
 #section_two{
-    background-image: url('./sectionTwo.jpg');
+    background-image: url('./img/sectionTwo.jpg');
 }
 
 .icon--title{
@@ -216,7 +216,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    background-image: url('./toggle1.jpg');
+    background-image: url('./img/toggle1.jpg');
 }
 
 .background--image2{
@@ -224,7 +224,7 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-    background-image: url('./toggle2.jpg');
+    background-image: url('./img/toggle2.jpg');
 }
 
 .climb--container{
@@ -384,7 +384,7 @@ body{
     background-repeat: no-repeat;
     height: 80vh;
     position: relative;
-    background-image: url('./toggle1.jpg');
+    background-image: url('./img/toggle1.jpg');
 
     display: flex;
     justify-content: center;
@@ -397,7 +397,7 @@ body{
     background-repeat: no-repeat;
     height: 80vh;
     position: relative;
-    background-image: url('./toggle2.jpg');
+    background-image: url('./img/toggle2.jpg');
 
     display: flex;
     justify-content: center;
@@ -475,7 +475,9 @@ body{
         font-size: 4rem;
     }
 
-
+    .footer--subcontainer {
+        width: 100%;
+    }
 
 }
 
